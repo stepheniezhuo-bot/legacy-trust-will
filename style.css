@@ -1,9 +1,7 @@
 body {
     font-family: sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
     margin: 0;
-    padding: 0;
+    background: linear-gradient(to right, #e0f7fa, #f0f4c3);
 }
 
 header {
@@ -21,8 +19,4 @@ legacy-planning-form {
     display: block;
     max-width: 800px;
     margin: 0 auto;
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
