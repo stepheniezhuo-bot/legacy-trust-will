@@ -6,11 +6,20 @@ This document outlines the development plan for a Legacy Planning application. T
 
 ## Current Implemented Features
 
-*   **Client Discovery Form:** A web component (`<client-discovery-form>`) that captures the client's basic profile, health information, and a financial snapshot.
-*   **Conditional Legacy Checklist:** A web component (`<legacy-checklist>`) that appears dynamically if the client's marital status is set to "Single" or "Divorced".
-*   **Automated Gap Analysis:** A web component (`<gap-analysis>`) that displays a detailed analysis of any "gaps" in the legacy plan based on the checklist, providing explanations and resources.
-*   **Modern Styling:** The application is styled with a "Modern Wealth" aesthetic, featuring a card-based layout, responsive design, and a professional color scheme.
+*   **Client Discovery Form:** A web component (`<legacy-planning-form>`) that captures the client's basic profile, health information, and a financial snapshot.
+*   **Corporate Styling:** The application is styled with a corporate color scheme of blue, green, and white.
 
-## Current Request: Initial Build
+## Current Request: Interactive Enhancements
 
-This request has been fulfilled.
+This section outlines the plan to make the application more interactive and dynamic.
+
+*   **Objective:** Enhance the user experience by providing real-time, personalized feedback based on the client's input.
+
+### Implemented Enhancement: Conditional Legacy Checklist
+
+*   **Description:** A new web component, `<legacy-checklist>`, will be introduced. This checklist will be dynamically displayed only when the client's marital status is set to "Single" or "Divorced".
+*   **Rationale:** This provides targeted, relevant information to a specific user segment, making the tool more personalized and valuable.
+*   **Implementation:**
+    *   Create a `<legacy-checklist>` web component with items relevant to unmarried individuals (e.g., CPF nomination, will, LPA).
+    *   Add an event listener to the "Marital Status" dropdown in the main form.
+    *   Dynamically inject and remove the `<legacy-checklist>` component from the DOM based on the selected marital status.
